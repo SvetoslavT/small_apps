@@ -1,0 +1,27 @@
+Overview:
+Garmin USB Utility is a Python program that allows users to copy and paste image files and POI files to their Garmin devices connected via USB. This program automatically detects the connected Garmin devices and allows the user to select the files they want to transfer to the device. The program also removes any old image files and POI files from the device before transferring the new files.
+
+Requirements:
+
+Python 3.6 or higher
+tkinter, os, shutil, win32api, win32file libraries
+Installation:
+
+No installation required, just run the program in a Python environment.
+Usage:
+
+Run the program in a Python environment.
+Select the IMG and POI files by clicking on the 'Browse' button next to each label.
+Click on the 'Start Process' button to start the file transfer process.
+Wait for the program to complete the transfer process.
+The program will display the output in the 'Output' label.
+Program Structure:
+The program is structured as a class called 'GarminUSBUtility'. The class constructor initializes some variables and sets up the GUI using the tkinter library. The class has three functions:
+
+browse_img_file(): Opens a file dialog to select the IMG file and stores the file path in a variable.
+browse_poi_file(): Opens a file dialog to select the POI file and stores the file path in a variable.
+start_processing(): Starts the file transfer process. This function checks if the IMG and POI files are selected and if there are any connected USB devices. If there are connected USB devices, it checks if there is a Garmin folder in the USB device. If there is a Garmin folder, the program removes any old image files and POI files and copies the new files to the device. The function also counts the number of devices that the program has successfully transferred files to and displays the output in the 'Output' label.
+The program also has two helper functions:
+
+get_usb_devices(): This function returns a list of connected USB devices.
+run(): This function runs the tkinter GUI.
