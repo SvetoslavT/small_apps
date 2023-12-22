@@ -1,0 +1,1 @@
+This repository is a curated collection of lightweight and versatile small-scale applications designed to address specific tasks and provide simple solutions. Each application within this repository is crafted with efficiency and ease of use in mind.
